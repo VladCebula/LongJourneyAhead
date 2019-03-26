@@ -1,5 +1,5 @@
 # LongJourneyAhead
-My learning directory you wont find anything useful here
+My learning directory you won't find anything useful here
 
 book i use:
 Thinking in Java 4th edition by Bruce Eckel
