@@ -1,4 +1,4 @@
-package com.github.VladCebula.Objects.Objects0;
+package com.github.VladCebula.Lessons.Objects.Objects0;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.github.VladCebula.Basics;
+package com.github.VladCebula.Lessons.Basics;
 
 public class Basics {
   public static void main(String[] args){

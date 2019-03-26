@@ -1,11 +1,11 @@
-package com.github.VladCebula.Variables;
+package com.github.VladCebula.Lessons.Variables;
 
 public class Main {
   public static void main(String[] args){
     //Car object and accessing it
     Car car = new Car();
     car.start();
-    car.name = "Polonez";
+    car.setName("Polonez");
     // Car reference Array
     Car[] cars = new Car[3];
     //put som car objects in
@@ -13,20 +13,27 @@ public class Main {
     cars[1] = new Car();
     cars[2] = car;
     //access Cars using array references
-    cars[0].name = "Ferrari";
-    cars[1].name = "Golf";
+    cars[0].setName("Ferrari");
+    cars[1].setName("Golf");
     //print last car name
-    System.out.println("Last car name is " + cars[2].name);
+    System.out.println("Last car name is " + cars[2].getName());
     //loop through array and start cars
-    for (int i = 0;i<cars.length;++i){
-      cars[i].start();
+    for (Car car1 : cars) {
+      car1.start();
     }
   }
 }
 
 class Car{
-  String name;
+  private String name;
   void start(){
-    System.out.println(name + " goes wrooom!");
+    System.out.println(getName() + " goes wrooom!");
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+  public String getName() {
+    return name;
   }
 }

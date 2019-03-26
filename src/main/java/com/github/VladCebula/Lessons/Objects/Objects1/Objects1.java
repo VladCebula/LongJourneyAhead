@@ -1,4 +1,4 @@
-package com.github.VladCebula.Objects.Objects1;
+package com.github.VladCebula.Lessons.Objects.Objects1;
 
 public class Objects1 {
   public static void main(String[] args){
@@ -7,7 +7,7 @@ public class Objects1 {
     new EncapsulationTest().test();
   }
 }
-class MachineTest{
+class MachineTest {
   void test() {
     new Machine().start();//default object in class
     Machine one = new Machine();
@@ -26,7 +26,7 @@ class MachineTest{
   }
 }
 class Machine{
-  int sizeInKilos = 0;
+  protected int sizeInKilos = 0;
   String name = "null bitch";
   void start(){
     if(sizeInKilos > 600){
