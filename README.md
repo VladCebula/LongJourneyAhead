@@ -1,6 +1,5 @@
 # LongJourneyAhead
-My learning directory
-its shit
+My learning directory you wont winf anything usefull here
 
 book i use:
 Thinking in Java 4th edition by Bruce Eckel
