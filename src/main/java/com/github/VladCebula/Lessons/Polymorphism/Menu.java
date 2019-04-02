@@ -1,5 +1,7 @@
 package com.github.VladCebula.Lessons.Polymorphism;
 
+import com.github.VladCebula.Lessons.CONSTRUCTORS.Lion;
+
 import java.util.Scanner;
 
 class Menu{
@@ -51,7 +53,7 @@ class Structure {
     //System.out.println("Sorry option coming soon! Try when correct update comes!\n");
     while (workingAdd){
       System.out.println("What you wanna add?: ");
-      System.out.println("1.Tiger\n2.Wolf\n3.Zet\n4.Dog\n5.Cat\n6.Orangutan\n7.Exit");
+      System.out.println("1.Tiger\n2.Wolf\n3.Zet\n4.Dog\n5.Cat\n6.Orangutan\n7.Lion\n8.Exit");
       switch (scan.nextInt()){
         default:
           System.out.println("Error! Invalid Command! Try correct number!\n");
@@ -114,6 +116,15 @@ class Structure {
           System.out.println(orangutan.getName() + " added!\n");
           break;
         case 7:
+          System.out.println("Give me its name and age:");
+          Animal lion = new Lion(scan.next(), scan.nextInt());
+          animal.getAnimalArrayList().add(lion);
+          System.out.println("Is it alive? y/n");
+          if (scan.next().equals("n")) {
+            lion.die();
+          }
+          System.out.println(lion.getName() + " added!\n");
+        case 8:
           System.out.println("Closing . . .");
           workingAdd = false;
           break;

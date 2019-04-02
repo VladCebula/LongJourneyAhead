@@ -14,55 +14,55 @@ public abstract class Animal {
   private int age;
   private ArrayList<Animal> animalArrayList = new ArrayList<Animal>();
 
-  String getSubtype() {
+  protected String getSubtype() {
     return subtype;
   }
 
-  String getClas() {
+  protected String getClas() {
     return clas;
   }
 
-  String getOrder() {
+  protected String getOrder() {
     return order;
   }
 
-  String getFamily() {
+  protected String getFamily() {
     return family;
   }
 
-  String getKind() {
+  protected String getKind() {
     return kind;
   }
 
-  String getType() {
+  protected String getType() {
     return type;
   }
 
-  int getAge() {
+  protected int getAge() {
     return age;
   }
 
-  void setAge(int age) {
+  protected void setAge(int age) {
     this.age = age;
   }
 
-  ArrayList<Animal> getAnimalArrayList() {
+  protected ArrayList<Animal> getAnimalArrayList() {
     return animalArrayList;
   }
 
-  void setName(String name) {
+  protected void setName(String name) {
     this.name = name;
   }
 
-  void die() {
+  protected void die() {
     this.alive = false;
   }
 
-  boolean isAlive() {
+  protected boolean isAlive() {
     return this.alive;
   }
 
-  String getName() {
+  protected String getName() {
     return this.name;
   }
 
