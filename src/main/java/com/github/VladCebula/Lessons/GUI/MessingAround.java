@@ -18,7 +18,7 @@ public class MessingAround extends JPanel {
     green = (int) (Math.random() * 255);
     Color endColor = new Color(red, green, blue);
 
-    GradientPaint gradient = new GradientPaint(70, 70, startColor, 150, 150, endColor);
+    GradientPaint gradient = new GradientPaint(150, 150, startColor, 150, 150, endColor);
     g2d.setPaint(gradient);
     g2d.fillOval(70, 70, 100, 100);
 
